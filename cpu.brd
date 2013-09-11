@@ -1126,6 +1126,24 @@ WITH CARD DETECTION&lt;BR&gt;
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
+<package name="AST7525MATRQ">
+<smd name="4" x="3.1" y="3.1" dx="2.2" dy="2.2" layer="1"/>
+<smd name="1" x="-3.1" y="3.1" dx="2.2" dy="2.2" layer="1"/>
+<smd name="2" x="-3.1" y="-3.1" dx="2.2" dy="2.2" layer="1"/>
+<smd name="3" x="3.1" y="-3.1" dx="2.2" dy="2.2" layer="1"/>
+<wire x1="-4" y1="-2" x2="-4" y2="1" width="0.127" layer="21"/>
+<wire x1="-4" y1="1" x2="-4" y2="2" width="0.127" layer="21"/>
+<wire x1="-4" y1="2" x2="-2" y2="4" width="0.127" layer="21"/>
+<wire x1="-2" y1="4" x2="-1" y2="4" width="0.127" layer="21"/>
+<wire x1="-1" y1="4" x2="4" y2="4" width="0.127" layer="21"/>
+<wire x1="4" y1="4" x2="4" y2="-4" width="0.127" layer="21"/>
+<wire x1="4" y1="-4" x2="-4" y2="-4" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="0" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="-1" y2="-3" width="0.127" layer="21"/>
+<wire x1="-1" y1="4" x2="-4" y2="1" width="0.127" layer="21"/>
+<text x="-3" y="-6" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3" y="5" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="rcl">
@@ -2756,6 +2774,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R15" library="rcl" package="R0603" value="5k11" x="-30.6578" y="-253.6444"/>
 <element name="R32" library="rcl" package="R0603" value="5k11" x="-30.6578" y="-256.9972"/>
 <element name="U$2" library="dafug" package="DAFUG" value="DAFUG" x="-34.544" y="-256.794"/>
+<element name="V2" library="OMAT_IC" package="SOT23" value="DMG2307LSOT23" x="-34.9758" y="-263.017"/>
+<element name="R33" library="rcl" package="R0603" value="" x="-35.9918" y="-269.0368"/>
+<element name="R34" library="rcl" package="R0603" value="" x="-44.6278" y="-272.3896"/>
+<element name="E4" library="OMAT_IC" package="AST7525MATRQ" value="AST7525MATRQ" x="-50.3428" y="-266.8778"/>
 </elements>
 <signals>
 <signal name="VSS_2">
@@ -2943,6 +2965,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="X9" pad="2"/>
 <contactref element="N5" pad="5"/>
 <contactref element="X6" pad="3"/>
+<contactref element="R34" pad="1"/>
 <wire x1="-29.3268" y1="-210.0326" x2="-25.1968" y2="-221.107" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.3268" y1="-206.0448" x2="-29.3268" y2="-210.0326" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.7368" y1="-233.8578" x2="-25.1968" y2="-221.107" width="0" layer="19" extent="1-1"/>
@@ -2983,6 +3006,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="61.22" y1="19.893" x2="62.12" y2="17.018" width="0" layer="19" extent="16-16"/>
 <wire x1="69.02" y1="19.893" x2="62.72" y2="17.018" width="0" layer="19" extent="16-16"/>
 <wire x1="70.52" y1="17.018" x2="69.02" y2="19.893" width="0" layer="19" extent="16-16"/>
+<wire x1="-45.3528" y1="-272.3896" x2="-27.7368" y2="-249.9614" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R2" pad="1"/>
@@ -3182,12 +3206,18 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="9.6012" y1="-23.1648" x2="64.82" y2="19.893" width="0" layer="19" extent="1-16"/>
 <wire x1="9.6012" y1="-23.7998" x2="9.6012" y2="-23.1648" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="VEINK33_CTRLN">
+<signal name="BUZCTRLN">
 <contactref element="Q2" pad="1"/>
 <contactref element="R10" pad="1"/>
 <contactref element="U1" pad="26"/>
-<wire x1="8.3174" y1="-13.7922" x2="-10.5156" y2="-59.6138" width="0" layer="19" extent="1-1"/>
+<contactref element="V2" pad="1"/>
+<contactref element="R33" pad="1"/>
+<contactref element="U1" pad="53"/>
+<wire x1="-9.525" y1="-48.387" x2="-10.5156" y2="-59.6138" width="0" layer="19" extent="1-1"/>
+<wire x1="8.3174" y1="-13.7922" x2="-9.525" y2="-48.387" width="0" layer="19" extent="1-1"/>
 <wire x1="9.083" y1="-8.8724" x2="8.3174" y2="-13.7922" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.9258" y1="-264.117" x2="-10.5156" y2="-59.6138" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.7168" y1="-269.0368" x2="-35.9258" y2="-264.117" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="N5" pad="3"/>
@@ -3242,9 +3272,13 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R12" pad="1"/>
 <contactref element="R11" pad="1"/>
 <contactref element="R31" pad="2"/>
+<contactref element="R33" pad="2"/>
+<contactref element="V2" pad="2"/>
 <wire x1="-31.3828" y1="-216.7382" x2="-30.2768" y2="-225.806" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.3828" y1="-213.3854" x2="-31.3828" y2="-216.7382" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.9328" y1="-240.8936" x2="-30.2768" y2="-225.806" width="0" layer="19" extent="1-1"/>
+<wire x1="-34.0258" y1="-264.117" x2="-29.9328" y2="-240.8936" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.2668" y1="-269.0368" x2="-34.0258" y2="-264.117" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.5268" y1="-138.6078" x2="-31.3828" y2="-213.3854" width="0" layer="19" extent="1-1"/>
 <wire x1="-12.2428" y1="-127.762" x2="-18.5268" y2="-138.6078" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.6824" y1="-120.7516" x2="-12.2428" y2="-127.762" width="0" layer="19" extent="1-1"/>
@@ -3566,13 +3600,17 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R32" pad="1"/>
 <wire x1="-31.3828" y1="-256.9972" x2="-13.5382" y2="-59.6138" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="VEINK1">
+<contactref element="V2" pad="3"/>
+<contactref element="E4" pad="2"/>
+<wire x1="-34.9758" y1="-261.917" x2="-53.4428" y2="-269.9778" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="R34" pad="2"/>
+<contactref element="E4" pad="3"/>
+<wire x1="-47.2428" y1="-269.9778" x2="-43.9028" y2="-272.3896" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
-<errors>
-<approved hash="3,1,bfea18161fc1b83d"/>
-<approved hash="3,1,3dea001607c23a3e"/>
-<approved hash="3,1,bf96186a1847bfbb"/>
-<approved hash="3,1,3d96006a00443db8"/>
-</errors>
 </board>
 </drawing>
 </eagle>
