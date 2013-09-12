@@ -12808,6 +12808,9 @@ at 30/07/2012 11:22:31</description>
 <part name="C23" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="C24" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
+<part name="C25" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="GND42" library="supply1" deviceset="GND" device=""/>
+<part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12983,6 +12986,9 @@ SEPT 2013  KL</text>
 <instance part="C23" gate="G$1" x="165.1" y="226.06"/>
 <instance part="C24" gate="G$1" x="182.88" y="226.06"/>
 <instance part="GND41" gate="1" x="195.58" y="223.52"/>
+<instance part="C25" gate="G$1" x="-53.34" y="144.78"/>
+<instance part="GND42" gate="1" x="-53.34" y="137.16"/>
+<instance part="+3V14" gate="G$1" x="-53.34" y="149.86"/>
 </instances>
 <busses>
 <bus name="EINKD[0..7]">
@@ -13386,6 +13392,10 @@ SEPT 2013  KL</text>
 <pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="228.6" x2="182.88" y2="231.14" width="0.1524" layer="91"/>
 <junction x="182.88" y="231.14"/>
+</segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="2"/>
+<pinref part="GND42" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -13851,6 +13861,10 @@ SEPT 2013  KL</text>
 <wire x1="386.08" y1="116.84" x2="378.46" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="116.84" x2="378.46" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="1"/>
+<pinref part="+3V14" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="EINKD0" class="0">
