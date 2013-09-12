@@ -2755,6 +2755,29 @@ WITH CARD DETECTION&lt;BR&gt;
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 <rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
 </package>
+<package name="X_3225">
+<description>&lt;b&gt;CRYSTAL CLOCK OSCILLATORS&lt;/b&gt;&lt;p&gt;
+5.0 Vdc or 3.3 Vdc - LOW PROFILE ULTRA MINIATURE CERAMIC SURFACE MOUNT&lt;br&gt;
+Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
+<wire x1="-2.2" y1="1.5" x2="2.2" y2="1.5" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="1.3" x2="2.4" y2="-1.3" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="-1.5" x2="-2.2" y2="-1.5" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.3" x2="-2.4" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="0" x2="-2.4" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="1.5" x2="-2.4" y2="1.3" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.4" y1="1.3" x2="2.2" y2="1.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-2.4" y1="-1.3" x2="-2.2" y2="-1.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.2" y1="-1.5" x2="2.4" y2="-1.3" width="0.2032" layer="21" curve="-90"/>
+<circle x="-2.9" y="-1.95" radius="0.5" width="0" layer="51"/>
+<smd name="1" x="-1.25" y="-1.15" dx="1.6" dy="1.5" layer="1"/>
+<smd name="2" x="1.25" y="-1.15" dx="1.6" dy="1.5" layer="1"/>
+<smd name="3" x="1.25" y="1.15" dx="1.6" dy="1.5" layer="1" rot="R180"/>
+<smd name="4" x="-1.25" y="1.15" dx="1.6" dy="1.5" layer="1" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2.4" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-1.4" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LT3463">
@@ -3030,6 +3053,22 @@ WITH CARD DETECTION&lt;BR&gt;
 <pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="CRYSTAL">
+<wire x1="-3.429" y1="4.064" x2="-4.191" y2="4.064" width="0.254" layer="94"/>
+<wire x1="-4.191" y1="4.064" x2="-4.191" y2="6.096" width="0.254" layer="94"/>
+<wire x1="-4.191" y1="6.096" x2="-3.429" y2="6.096" width="0.254" layer="94"/>
+<wire x1="-3.429" y1="4.064" x2="-3.429" y2="6.096" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="3.81" x2="-2.794" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="5.08" x2="-2.794" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-4.826" y1="5.08" x2="-6.985" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="5.08" x2="-2.794" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-4.826" y1="3.81" x2="-4.826" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-4.826" y1="5.08" x2="-4.826" y2="6.35" width="0.254" layer="94"/>
+<pin name="X1" x="-10.16" y="5.08" visible="pad" length="middle"/>
+<pin name="X2" x="2.54" y="5.08" visible="pad" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3768,6 +3807,25 @@ WITH CARD DETECTION&lt;BR&gt;
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XTAL_3225_SMD" prefix="Q">
+<description>&lt;b&gt;CRYSTAL CLOCK OSCILLATORS&lt;/b&gt;&lt;p&gt;
+5.0 Vdc or 3.3 Vdc - LOW PROFILE ULTRA MINIATURE CERAMIC SURFACE MOUNT&lt;br&gt;
+Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="X_3225">
+<connects>
+<connect gate="G$1" pin="X1" pad="1"/>
+<connect gate="G$1" pin="X2" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4875,6 +4933,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<wire x1="-0.635" y1="0.635" x2="0.635" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-0.635" x2="0.635" y2="-0.635" width="0.127" layer="21"/>
 </package>
 <package name="C0805">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
@@ -12744,6 +12804,10 @@ at 30/07/2012 11:22:31</description>
 <part name="C22" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
+<part name="G1" library="OMAT_IC" deviceset="XTAL_3225_SMD" device=""/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C24" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="GND41" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12915,6 +12979,10 @@ SEPT 2013  KL</text>
 <instance part="C22" gate="G$1" x="325.12" y="165.1"/>
 <instance part="GND40" gate="1" x="325.12" y="152.4"/>
 <instance part="+3V13" gate="G$1" x="378.46" y="121.92"/>
+<instance part="G1" gate="G$1" x="177.8" y="210.82"/>
+<instance part="C23" gate="G$1" x="165.1" y="226.06"/>
+<instance part="C24" gate="G$1" x="182.88" y="226.06"/>
+<instance part="GND41" gate="1" x="195.58" y="223.52"/>
 </instances>
 <busses>
 <bus name="EINKD[0..7]">
@@ -13307,6 +13375,17 @@ SEPT 2013  KL</text>
 <pinref part="GND40" gate="1" pin="GND"/>
 <wire x1="325.12" y1="157.48" x2="325.12" y2="154.94" width="0.1524" layer="91"/>
 <junction x="325.12" y="157.48"/>
+</segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="228.6" x2="165.1" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="231.14" x2="182.88" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="231.14" x2="195.58" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="231.14" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="228.6" x2="182.88" y2="231.14" width="0.1524" layer="91"/>
+<junction x="182.88" y="231.14"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14454,6 +14533,30 @@ SEPT 2013  KL</text>
 <pinref part="D1" gate="A" pin="PA1"/>
 <wire x1="101.6" y1="180.34" x2="78.74" y2="180.34" width="0.1524" layer="91"/>
 <label x="83.82" y="180.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="D1" gate="A" pin="PH0_-OSC_IN"/>
+<wire x1="162.56" y1="205.74" x2="165.1" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="205.74" x2="165.1" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="G1" gate="G$1" pin="X1"/>
+<wire x1="165.1" y1="215.9" x2="167.64" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="220.98" x2="165.1" y2="215.9" width="0.1524" layer="91"/>
+<junction x="165.1" y="215.9"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="D1" gate="A" pin="PH1-_OSC_OUT"/>
+<wire x1="162.56" y1="203.2" x2="182.88" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="203.2" x2="182.88" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="G1" gate="G$1" pin="X2"/>
+<wire x1="182.88" y1="215.9" x2="180.34" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="220.98" x2="182.88" y2="215.9" width="0.1524" layer="91"/>
+<junction x="182.88" y="215.9"/>
 </segment>
 </net>
 </nets>
