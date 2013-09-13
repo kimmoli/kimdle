@@ -1,0 +1,99 @@
+Partlist
+
+Exported from cpu.sch at 13.9.2013 15:01:23
+
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value             Device            Package                 Library                                 Sheet
+
+C1       1u 50V            C-EUC0805         C0805                   rcl                                     1
+C2       4u7 50V           C-EUC0805         C0805                   rcl                                     1
+C3       4u7 50V           C-EUC0805         C0805                   rcl                                     1
+C4       4u7 50V           C-EUC0805         C0805                   rcl                                     1
+C5       4u7 50V           C-EUC0805         C0805                   rcl                                     1
+C6       4u7 50V           C-EUC0805         C0805                   rcl                                     1
+C7       1u 50V            C-EUC0805         C0805                   rcl                                     1
+C8       100n              C-EUC0603         C0603                   rcl                                     1
+C9       100n              C-EUC0603         C0603                   rcl                                     1
+C10      100n              C-EUC0603         C0603                   rcl                                     1
+C11      100n              C-EUC0603         C0603                   rcl                                     1
+C12      100n              C-EUC0603         C0603                   rcl                                     1
+C13      100n              C-EUC0603         C0603                   rcl                                     1
+C14      1u 50V            C-EUC0805         C0805                   rcl                                     1
+C15      10u 10V           C-EUC0805         C0805                   rcl                                     1
+C16      47n               C-EUC0805         C0805                   rcl                                     1
+C17      47n               C-EUC0805         C0805                   rcl                                     1
+C18      10u 10V           C-EUC0805         C0805                   rcl                                     1
+C19      100n              C-EUC0603         C0603                   rcl                                     1
+C20      10u 10V           C-EUC0805         C0805                   rcl                                     1
+C21      10u 10V           C-EUC0805         C0805                   rcl                                     1
+C22      100n              C-EUC0603         C0603                   rcl                                     1
+C23      12p               C-EUC0603         C0603                   rcl                                     1
+C24      12p               C-EUC0603         C0603                   rcl                                     1
+C25      10u 10V           C-EUC0805         C0805                   rcl                                     1
+D1       STM32L151R8T6     STM32L151R8T6     QFP50P1200X1200X160-64N ST Microelctronics_By_element14_Batch_1 1
+D2       TMP75DGK          TMP75DGK          MSOP8                   ti_tmp                                  1
+E4       AST7525MATRQ      AST7525MATRQ      AST7525MATRQ            OMAT_IC                                 1
+G1       XTAL_3225_SMD     XTAL_3225_SMD     X_3225                  OMAT_IC                                 1
+H1       GRN               LEDCHIP-LED0603   CHIP-LED0603            OMAT_IC                                 1
+H2       GRN               LEDCHIP-LED0603   CHIP-LED0603            OMAT_IC                                 1
+H3       GRN               LEDCHIP-LED0603   CHIP-LED0603            OMAT_IC                                 1
+H4       YEL               LEDCHIP-LED0603   CHIP-LED0603            OMAT_IC                                 1
+H5       YEL               LEDCHIP-LED0603   CHIP-LED0603            OMAT_IC                                 1
+L1       LPS4018B          LPS4018B          LPS4018_V2              OMAT_IC                                 1
+L2       LPS4018B          LPS4018B          LPS4018_V2              OMAT_IC                                 1
+N1       LT3463EDD         LT3463EDD         DFN300X300X80-11N       OMAT_IC                                 1
+N2       MC78L15ACDG       MC78L15ACDG       SOIC127P600X175-8N      ON Semiconductor_By_element14_Batch_1   1
+N3       MC79L15ACDG       MC79L15ACDG       SOIC127P600X175-8N      ON Semiconductor_By_element14_Batch_1   1
+N4       MCP1700T-3302E/TT MCP1700T-3302E/TT SOT95P237X112-3N        Microchip_By_element14_Batch_1          1
+N5       LM358             MAX412CPAMSOP     SOP65P490X110-8N        OMAT_IC                                 1
+N6       ADP5063           ADP5063           QFN50P400X400X80-21N    OMAT_IC                                 1
+R1       10k               R-EU_R0603        R0603                   rcl                                     1
+R2       10k               R-EU_R0603        R0603                   rcl                                     1
+R3       165k              R-EU_R0603        R0603                   rcl                                     1
+R4       10k               R-EU_R0603        R0603                   rcl                                     1
+R5       10k               R-EU_R0603        R0603                   rcl                                     1
+R6       10k               R-EU_R0603        R0603                   rcl                                     1
+R7       160k              R-EU_R0603        R0603                   rcl                                     1
+R8       10k               R-EU_R0603        R0603                   rcl                                     1
+R9       10k               R-EU_R0603        R0603                   rcl                                     1
+R10      10k               R-EU_R0603        R0603                   rcl                                     1
+R11      511R              R-EU_R0603        R0603                   rcl                                     1
+R12      511R              R-EU_R0603        R0603                   rcl                                     1
+R13      511R              R-EU_R0603        R0603                   rcl                                     1
+R14      511R              R-EU_R0603        R0603                   rcl                                     1
+R15      10k               R-EU_R0603        R0603                   rcl                                     1
+R16      22R               R-EU_R0603        R0603                   rcl                                     1
+R17      22R               R-EU_R0603        R0603                   rcl                                     1
+R19      10k               R-EU_R0603        R0603                   rcl                                     1
+R20      10k               R-EU_R0603        R0603                   rcl                                     1
+R21      10k               R-EU_R0603        R0603                   rcl                                     1
+R22      10k               R-EU_R0603        R0603                   rcl                                     1
+R23      10k               R-EU_R0603        R0603                   rcl                                     1
+R24      10k               R-EU_R0603        R0603                   rcl                                     1
+R25      511R              R-EU_R0603        R0603                   rcl                                     1
+R26      10k               R-EU_R0603        R0603                   rcl                                     1
+R27      2k15              R-EU_R0603        R0603                   rcl                                     1
+R28      2k15              R-EU_R0603        R0603                   rcl                                     1
+R31      10k               R-EU_R0603        R0603                   rcl                                     1
+R32      10k               R-EU_R0603        R0603                   rcl                                     1
+R33      10k               R-EU_R0603        R0603                   rcl                                     1
+R34      22R               R-EU_R0603        R0603                   rcl                                     1
+SJ1                        SJ                SJ-SMALL                OMAT_IC                                 1
+SJ2                        SJ                SJ-SMALL                OMAT_IC                                 1
+V1       PMEG6010          DIODE-SOD323-R    SOD323-R                diode                                   1
+V3       FDV304            DMG2307LSOT23     SOT23                   OMAT_IC                                 1
+V4       FDV304            DMG2307LSOT23     SOT23                   OMAT_IC                                 1
+V5       FDV304            DMG2307LSOT23     SOT23                   OMAT_IC                                 1
+X1       ED060SC4_EINK     ED060SC4_EINK     FH26-39S-0.3SHW         hirose-flex                             1
+X2       PIIKKIRIMA-5      PIIKKIRIMA-5      PIIKKIRIMA-5            OMAT_IC                                 1
+X3       PIIKKIRIMA-2      PIIKKIRIMA-2      PIIKKIRIMA-2            OMAT_IC                                 1
+X4       629105136821      629105136821      629105136821            OMAT_IC                                 1
+X5       693071010811      693071010811      693071010811            OMAT_IC                                 1
+X6       PIIKKIRIMA-6      PIIKKIRIMA-6      PIIKKIRIMA-6            OMAT_IC                                 1
+X7       PIIKKIRIMA-2      PIIKKIRIMA-2      PIIKKIRIMA-2            OMAT_IC                                 1
+X8       PIIKKIRIMA-2      PIIKKIRIMA-2      PIIKKIRIMA-2            OMAT_IC                                 1
+X9       PIIKKIRIMA-2      PIIKKIRIMA-2      PIIKKIRIMA-2            OMAT_IC                                 1
+X10      PIIKKIRIMA-4      PIIKKIRIMA-4      PIIKKIRIMA-4            OMAT_IC                                 1
