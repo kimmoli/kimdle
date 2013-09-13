@@ -9,13 +9,15 @@ Desktop="Desktop"
 AutoSaveProject=1
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.4.0/lbr/supply1.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.4.0/lbr/omat/OMAT_IC.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-6.4.0/lbr/omat/dafug.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.4.0/lbr/omat/rcl.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.4.0/lbr/omat/ti_tmp.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-6.4.0/lbr/Microchip/Microchip_By_element14_Batch_1.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="956 282 1555 681"
-State=2
+Loc="652 321 1251 720"
+State=1
 Number=0
 
 [Desktop]
